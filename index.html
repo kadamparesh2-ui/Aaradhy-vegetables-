@@ -22,43 +22,36 @@
   .shop-name { font-size: 1.8rem; font-weight: 800; text-shadow: 0 2px 8px rgba(0,0,0,0.2); }
   .shop-tagline { font-size: 0.9rem; opacity: 0.85; margin-top: 2px; }
   .update-time { margin-top: 10px; background: rgba(255,255,255,0.15); border-radius: 20px; padding: 4px 14px; font-size: 0.78rem; display: inline-block; }
-
   .closed-banner { background: #c0392b; color: white; text-align: center; padding: 14px; font-size: 1rem; font-weight: 700; display: none; }
   .section-title { padding: 18px 20px 10px; font-size: 1rem; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px dashed var(--border); margin: 0 16px; }
   .items-list { padding: 12px 16px; display: flex; flex-direction: column; gap: 10px; }
-
-  /* Customer item card with image */
   .item-card { background: white; border: 1.5px solid var(--border); border-radius: 14px; padding: 12px 14px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 8px rgba(45,106,45,0.07); animation: fadeIn 0.3s ease; gap: 10px; }
   @keyframes fadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
   .item-left { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 0; }
   .item-img { width: 52px; height: 52px; border-radius: 10px; object-fit: cover; border: 1.5px solid var(--border); flex-shrink: 0; }
-  .item-emoji-fallback { font-size: 2rem; width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: var(--green-pale); border-radius: 10px; flex-shrink: 0; }
+  .item-emoji-box { font-size: 2rem; width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: var(--green-pale); border-radius: 10px; flex-shrink: 0; }
   .item-name { font-size: 1rem; font-weight: 700; }
   .item-unit { font-size: 0.78rem; color: var(--text-light); margin-top: 1px; }
   .item-price { background: linear-gradient(135deg, var(--orange), var(--orange-light)); color: white; font-size: 1rem; font-weight: 800; padding: 6px 14px; border-radius: 20px; white-space: nowrap; flex-shrink: 0; }
   .badge-fresh { background: var(--green-pale); color: var(--green); font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 10px; margin-top: 3px; display: inline-block; }
   .badge-limited { background: #fff3cd; color: #856404; font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 10px; margin-top: 3px; display: inline-block; }
   .empty-msg { text-align: center; padding: 40px 20px; color: var(--text-light); font-size: 1rem; }
-
   .wa-section { padding: 20px 16px 30px; }
   .wa-btn { display: flex; align-items: center; justify-content: center; gap: 10px; background: #25D366; color: white; font-family: 'Baloo 2', sans-serif; font-size: 1.1rem; font-weight: 800; padding: 16px; border-radius: 16px; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.35); }
   .wa-icon { width: 26px; height: 26px; }
   .admin-link-wrap { text-align: center; padding: 8px 0 20px; }
   .admin-link { font-size: 0.75rem; color: var(--border); cursor: pointer; }
-  .admin-link:hover { color: var(--text-light); }
 
   /* Admin */
   .admin-header { background: var(--text); color: white; padding: 20px; display: flex; align-items: center; justify-content: space-between; }
   .admin-header h2 { font-size: 1.2rem; font-weight: 800; }
   .back-btn { background: rgba(255,255,255,0.15); border: none; color: white; padding: 6px 14px; border-radius: 20px; font-family: 'Baloo 2', sans-serif; font-size: 0.85rem; cursor: pointer; }
-
   .login-wrap { padding: 40px 20px; max-width: 360px; margin: 0 auto; }
   .login-wrap h3 { font-size: 1.3rem; margin-bottom: 20px; text-align: center; }
   .input-field { width: 100%; padding: 14px 16px; border: 2px solid var(--border); border-radius: 12px; font-family: 'Baloo 2', sans-serif; font-size: 1rem; margin-bottom: 14px; outline: none; transition: border-color 0.2s; }
   .input-field:focus { border-color: var(--green); }
   .btn-primary { width: 100%; background: var(--green); color: white; border: none; padding: 14px; border-radius: 12px; font-family: 'Baloo 2', sans-serif; font-size: 1rem; font-weight: 700; cursor: pointer; }
-  .error-msg { color: #c0392b; font-size: 0.85rem; text-align: center; margin-top: 8px; }
-
+  .error-msg { color: #c0392b; font-size: 0.85rem; text-align: center; margin-top: 10px; }
   .admin-panel { padding: 16px; display: none; }
   .settings-card { background: white; border: 1.5px solid var(--border); border-radius: 16px; padding: 18px; margin-bottom: 16px; }
   .settings-card h4 { font-size: 0.9rem; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px; }
@@ -73,40 +66,40 @@
   .toggle input:checked + .toggle-slider { background: var(--green); }
   .toggle input:checked + .toggle-slider::before { transform: translateX(22px); }
 
-  /* Admin Item Cards - Updated with image */
+  /* Admin item cards */
   .items-admin { display: flex; flex-direction: column; gap: 12px; margin-bottom: 14px; }
   .item-admin-card { background: var(--green-pale); border: 1.5px solid var(--border); border-radius: 14px; padding: 14px; }
-  
-  .item-admin-img-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
-  .item-admin-preview { width: 60px; height: 60px; border-radius: 10px; object-fit: cover; border: 2px solid var(--border); display: none; }
-  .item-admin-emoji-preview { width: 60px; height: 60px; border-radius: 10px; background: white; border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1.8rem; flex-shrink: 0; }
-  .img-upload-area { flex: 1; }
-  .img-upload-label { display: block; background: white; border: 2px dashed var(--green-light); border-radius: 10px; padding: 10px 12px; text-align: center; font-size: 0.8rem; color: var(--green); font-weight: 600; cursor: pointer; transition: background 0.2s; }
-  .img-upload-label:hover { background: var(--green-pale); }
-  .img-upload-input { display: none; }
-  .img-url-input { width: 100%; padding: 8px 10px; border: 1.5px solid var(--border); border-radius: 8px; font-family: 'Baloo 2', sans-serif; font-size: 0.8rem; background: white; outline: none; margin-top: 6px; }
-  
-  .item-admin-top { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
-  .item-admin-top input { flex: 1; padding: 8px 10px; border: 1.5px solid var(--border); border-radius: 8px; font-family: 'Baloo 2', sans-serif; font-size: 0.9rem; background: white; outline: none; }
-  .item-admin-bottom { display: flex; gap: 8px; align-items: center; }
-  .item-admin-bottom input { flex: 1; padding: 8px 10px; border: 1.5px solid var(--border); border-radius: 8px; font-family: 'Baloo 2', sans-serif; font-size: 0.9rem; background: white; outline: none; }
-  .badge-select { padding: 8px 6px; border: 1.5px solid var(--border); border-radius: 8px; font-family: 'Baloo 2', sans-serif; font-size: 0.8rem; background: white; outline: none; }
-  .del-btn { background: #fee2e2; border: none; color: #c0392b; width: 34px; height: 34px; border-radius: 8px; font-size: 1rem; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .img-row { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
+  .img-preview-box { width: 58px; height: 58px; border-radius: 10px; border: 2px solid var(--border); overflow: hidden; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: white; font-size: 1.8rem; }
+  .img-preview-box img { width: 100%; height: 100%; object-fit: cover; }
+  .img-controls { flex: 1; display: flex; flex-direction: column; gap: 6px; }
+  .file-label { background: white; border: 2px dashed var(--green-light); border-radius: 8px; padding: 7px 10px; text-align: center; font-size: 0.8rem; color: var(--green); font-weight: 600; cursor: pointer; display: block; }
+  .file-input { display: none; }
+  .url-inp { width: 100%; padding: 7px 10px; border: 1.5px solid var(--border); border-radius: 8px; font-family: 'Baloo 2', sans-serif; font-size: 0.78rem; background: white; outline: none; }
+  .upload-status { font-size: 0.72rem; color: var(--green); display: none; }
+  .name-row { display: flex; gap: 8px; margin-bottom: 8px; }
+  .name-row input { flex: 1; padding: 8px 10px; border: 1.5px solid var(--border); border-radius: 8px; font-family: 'Baloo 2', sans-serif; font-size: 0.9rem; background: white; outline: none; }
+  .del-btn { background: #fee2e2; border: none; color: #c0392b; width: 34px; height: 34px; border-radius: 8px; font-size: 1rem; cursor: pointer; flex-shrink: 0; }
+  .detail-row { display: flex; gap: 8px; }
+  .detail-row input { flex: 1; padding: 8px 10px; border: 1.5px solid var(--border); border-radius: 8px; font-family: 'Baloo 2', sans-serif; font-size: 0.9rem; background: white; outline: none; }
+  .unit-inp { max-width: 65px !important; }
+  .badge-inp { padding: 8px 6px; border: 1.5px solid var(--border); border-radius: 8px; font-family: 'Baloo 2', sans-serif; font-size: 0.8rem; background: white; outline: none; }
+
   .add-item-btn { width: 100%; background: var(--green-pale); color: var(--green); border: 2px dashed var(--green-light); padding: 12px; border-radius: 12px; font-family: 'Baloo 2', sans-serif; font-size: 0.95rem; font-weight: 700; cursor: pointer; margin-bottom: 16px; }
   .save-btn { width: 100%; background: linear-gradient(135deg, var(--orange), var(--orange-light)); color: white; border: none; padding: 16px; border-radius: 14px; font-family: 'Baloo 2', sans-serif; font-size: 1.1rem; font-weight: 800; cursor: pointer; box-shadow: 0 4px 16px rgba(232,101,10,0.3); }
-  .save-success { text-align: center; color: var(--green); font-weight: 700; font-size: 0.9rem; margin-top: 10px; display: none; }
+  .save-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+  .msg-box { text-align: center; font-weight: 700; font-size: 0.9rem; margin-top: 10px; padding: 12px; border-radius: 10px; display: none; }
+  .msg-success { color: #2d6a2d; background: var(--green-pale); }
+  .msg-error   { color: #c0392b; background: #fee2e2; white-space: pre-wrap; font-size: 0.8rem; }
   .logout-btn { width: 100%; background: #f8f8f8; color: var(--text-light); border: 1.5px solid var(--border); padding: 12px; border-radius: 12px; font-family: 'Baloo 2', sans-serif; font-size: 0.9rem; font-weight: 600; cursor: pointer; margin-top: 8px; }
-
   .loading { text-align: center; padding: 30px; color: var(--text-light); }
   .spinner { display: inline-block; width: 30px; height: 30px; border: 3px solid var(--border); border-top-color: var(--green); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 8px; }
   @keyframes spin { to { transform: rotate(360deg); } }
-
-  /* Uploading indicator */
-  .upload-progress { font-size: 0.75rem; color: var(--green); margin-top: 4px; display: none; }
 </style>
 </head>
 <body>
 
+<!-- CUSTOMER PAGE -->
 <div id="customerPage">
   <div class="closed-banner" id="closedBanner">🚫 આજે દુકાન બંધ છે</div>
   <div class="header">
@@ -120,7 +113,7 @@
     <div class="loading"><div class="spinner"></div><br>લોડ થઈ રહ્યું છે...</div>
   </div>
   <div class="wa-section">
-    <a class="wa-btn" id="waBtn" href="https://wa.me/919737668683?text=%E0%AA%A8%E0%AA%AE%E0%AA%B8%E0%AB%8D%E0%AA%A4%E0%AB%87!%20%E0%AA%AE%E0%AA%BE%E0%AA%B0%E0%AB%87%20%E0%AA%B6%E0%AA%BE%E0%AA%95%E0%AA%AD%E0%AA%BE%E0%AA%9C%E0%AB%80%20%E0%AA%9C%E0%AB%8B%E0%AA%88%E0%AA%8F%20%E0%AA%9B%E0%AB%87%20%F0%9F%A5%A6" target="_blank">
+    <a class="wa-btn" id="waBtn" href="https://wa.me/919737668683" target="_blank">
       <svg class="wa-icon" viewBox="0 0 32 32" fill="white" xmlns="http://www.w3.org/2000/svg">
         <path d="M16 2C8.268 2 2 8.268 2 16c0 2.478.677 4.799 1.855 6.793L2 30l7.393-1.836A13.93 13.93 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.56 11.56 0 01-5.893-1.607l-.422-.252-4.387 1.09 1.113-4.273-.276-.44A11.558 11.558 0 014.4 16C4.4 9.593 9.593 4.4 16 4.4S27.6 9.593 27.6 16 22.407 27.6 16 27.6zm6.34-8.647c-.348-.174-2.059-1.016-2.379-1.132-.32-.116-.552-.174-.784.174-.232.347-.9 1.132-1.103 1.366-.203.232-.406.26-.754.086-.348-.174-1.469-.541-2.797-1.725-1.034-.922-1.732-2.06-1.935-2.408-.203-.348-.022-.536.153-.709.157-.155.348-.406.522-.609.174-.203.232-.348.348-.58.116-.232.058-.435-.029-.609-.087-.174-.784-1.89-1.074-2.588-.283-.68-.57-.588-.784-.599l-.667-.011c-.232 0-.609.087-.928.435-.32.347-1.22 1.19-1.22 2.903s1.249 3.368 1.423 3.6c.174.232 2.457 3.75 5.953 5.261.832.359 1.482.574 1.989.734.835.266 1.595.228 2.196.138.67-.1 2.059-.842 2.349-1.654.29-.812.29-1.508.203-1.654-.086-.145-.318-.232-.667-.406z"/>
       </svg>
@@ -132,17 +125,20 @@
   </div>
 </div>
 
+<!-- ADMIN PAGE -->
 <div id="adminPage">
   <div class="admin-header">
     <h2>⚙ Admin Panel</h2>
     <button class="back-btn" onclick="goBack()">← मागे</button>
   </div>
+
   <div class="login-wrap" id="loginWrap">
     <h3>🔐 Login करा</h3>
     <input class="input-field" type="password" id="pwdInput" placeholder="Password टाका" onkeydown="if(event.key==='Enter') checkLogin()">
     <button class="btn-primary" onclick="checkLogin()">Login</button>
     <div class="error-msg" id="loginError"></div>
   </div>
+
   <div class="admin-panel" id="adminPanel">
     <div class="settings-card">
       <h4>🏪 દુકાનની માહિતી</h4>
@@ -166,57 +162,61 @@
         </label>
       </div>
     </div>
+
     <div class="settings-card">
       <h4>🥦 શાકભાજીની યાદી</h4>
       <div class="items-admin" id="adminItems"></div>
       <button class="add-item-btn" onclick="addItem()">+ નવી શાકભાજી Add કરો</button>
     </div>
+
     <div class="settings-card">
       <h4>🔐 Password બદલો</h4>
       <input class="input-field" id="newPwd" type="password" placeholder="નવો password" style="margin-bottom:8px">
       <input class="input-field" id="confirmPwd" type="password" placeholder="ફરીથી ટાઈપ કરો" style="margin-bottom:0">
     </div>
-    <button class="save-btn" onclick="saveAll()">💾 Save કરો</button>
-    <div class="save-success" id="saveSuccess">✅ Firebase મા Save થઈ ગયું!</div>
+
+    <button class="save-btn" id="saveBtn" onclick="saveAll()">💾 Save करो</button>
+    <div class="msg-box msg-success" id="msgSuccess"></div>
+    <div class="msg-box msg-error"   id="msgError"></div>
     <button class="logout-btn" onclick="logout()">Logout</button>
     <div style="height:30px"></div>
   </div>
 </div>
 
 <script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
-import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-database.js";
-import { getStorage, ref as sRef, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-storage.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+import { getStorage, ref as sRef, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDr9VSd7cHFIqwrIFMtx2WdhK6x3v_DBCY",
   authDomain: "aaradhy-vegetables.firebaseapp.com",
   databaseURL: "https://aaradhy-vegetables-default-rtdb.firebaseio.com",
   projectId: "aaradhy-vegetables",
-  storageBucket: "aaradhy-vegetables.firebasestorage.app",
+  storageBucket: "aaradhy-vegetables.appspot.com",
   messagingSenderId: "1028479885770",
   appId: "1:1028479885770:web:9dea0770d773f917962f33"
 };
 
-const app = initializeApp(firebaseConfig);
-const db = getDatabase(app);
-const storage = getStorage(app);
+const app      = initializeApp(firebaseConfig);
+const db       = getDatabase(app);
+const storage  = getStorage(app);
 
 const DEFAULT = {
   shopName: 'Aaradhy Vegetables',
-  tagline: 'રોજ તાજું • સીધું ખેતરમાંથી',
+  tagline:  'રોજ તાજું • સીધું ખેતરમાંથી',
   waNumber: '919737668683',
   shopClosed: false,
   password: 'admin123',
   items: [
-    { name: 'ટામેટા', price: '30', unit: 'kg', badge: 'fresh', imageUrl: '' },
-    { name: 'ડુંગળી', price: '25', unit: 'kg', badge: '', imageUrl: '' },
-    { name: 'બટાટા', price: '20', unit: 'kg', badge: '', imageUrl: '' },
-    { name: 'કોથમીર', price: '10', unit: 'જુડી', badge: 'fresh', imageUrl: '' },
-    { name: 'ભીંડા', price: '40', unit: 'kg', badge: '', imageUrl: '' },
-    { name: 'રીંગણ', price: '30', unit: 'kg', badge: '', imageUrl: '' },
-    { name: 'દૂધી', price: '25', unit: 'kg', badge: 'fresh', imageUrl: '' },
-    { name: 'લીંબુ', price: '5', unit: 'નંગ', badge: '', imageUrl: '' },
+    { name:'ટામેટા',  price:'30', unit:'kg',    badge:'fresh',   imageUrl:'' },
+    { name:'ડુંગળી',  price:'25', unit:'kg',    badge:'',        imageUrl:'' },
+    { name:'બટાટા',   price:'20', unit:'kg',    badge:'',        imageUrl:'' },
+    { name:'કોથમીર', price:'10', unit:'જુડી', badge:'fresh',   imageUrl:'' },
+    { name:'ભીંડા',   price:'40', unit:'kg',    badge:'',        imageUrl:'' },
+    { name:'રીંગણ',   price:'30', unit:'kg',    badge:'',        imageUrl:'' },
+    { name:'દૂધી',    price:'25', unit:'kg',    badge:'fresh',   imageUrl:'' },
+    { name:'લીંબુ',   price:'5',  unit:'નંગ',  badge:'',        imageUrl:'' },
   ],
   lastUpdated: ''
 };
@@ -228,117 +228,114 @@ const EMOJIS = {
   'મેથી':'🌿','લીંબુ':'🍋','કાકડી':'🥒','કારેલા':'🫑','તુરિયા':'🥒',
   'ગવાર':'🫑','વટાણા':'🌿','default':'🥬'
 };
+const emo = n => EMOJIS[n] || EMOJIS['default'];
 
-function emoji(name) { return EMOJIS[name] || EMOJIS['default']; }
-
+// ─── Firebase helpers ─────────────────────────────────────
 async function loadData() {
   try {
     const snap = await get(ref(db, 'shop'));
-    return snap.exists() ? snap.val() : { ...DEFAULT };
-  } catch { return { ...DEFAULT }; }
+    if (!snap.exists()) return structuredClone(DEFAULT);
+    const d = snap.val();
+    if (d.items) d.items = d.items.map(i => ({ imageUrl:'', ...i }));
+    return d;
+  } catch { return structuredClone(DEFAULT); }
 }
 
 async function saveData(data) {
   await set(ref(db, 'shop'), data);
 }
 
-// Upload image to Firebase Storage
-async function uploadImage(file, itemIndex) {
+async function uploadImg(file, key) {
   const ext = file.name.split('.').pop();
-  const storageRef = sRef(storage, `vegetables/item_${itemIndex}_${Date.now()}.${ext}`);
-  await uploadBytes(storageRef, file);
-  const url = await getDownloadURL(storageRef);
-  return url;
+  const r   = sRef(storage, `vegetables/${key}_${Date.now()}.${ext}`);
+  const snap = await uploadBytes(r, file);
+  return getDownloadURL(snap.ref);
 }
 
+// ─── Customer page ────────────────────────────────────────
 async function renderCustomer() {
-  const data = await loadData();
-  document.getElementById('displayShopName').textContent = data.shopName || DEFAULT.shopName;
-  document.getElementById('displayTagline').textContent = data.tagline || DEFAULT.tagline;
-  document.getElementById('closedBanner').style.display = data.shopClosed ? 'block' : 'none';
-  document.getElementById('displayUpdateTime').textContent = data.lastUpdated ? '🕐 ' + data.lastUpdated : '🌿 આજની તાજી યાદી';
+  const d = await loadData();
+  document.getElementById('displayShopName').textContent  = d.shopName || DEFAULT.shopName;
+  document.getElementById('displayTagline').textContent   = d.tagline  || DEFAULT.tagline;
+  document.getElementById('closedBanner').style.display   = d.shopClosed ? 'block' : 'none';
+  document.getElementById('displayUpdateTime').textContent = d.lastUpdated ? '🕐 '+d.lastUpdated : '🌿 આજની તાજી યાદી';
 
-  const waBtn = document.getElementById('waBtn');
-  const num = data.waNumber || '919737668683';
+  const num = d.waNumber || '919737668683';
   const msg = encodeURIComponent('નમસ્તે! મારે શાકભાજી જોઈએ છે 🥦');
-  waBtn.href = `https://wa.me/${num}?text=${msg}`;
+  document.getElementById('waBtn').href = `https://wa.me/${num}?text=${msg}`;
 
-  const container = document.getElementById('customerItems');
-  if (!data.items || data.items.length === 0) {
-    container.innerHTML = '<div class="empty-msg">📦 આજે યાદી update નથી થઈ</div>';
-    return;
-  }
-  container.innerHTML = '';
-  data.items.forEach((item, i) => {
-    let badge = '';
-    if (item.badge === 'fresh') badge = '<span class="badge-fresh">✨ તાજું</span>';
-    if (item.badge === 'limited') badge = '<span class="badge-limited">⚡ થોડું બાકી</span>';
-
-    // Image or emoji
-    let imgHtml = '';
-    if (item.imageUrl) {
-      imgHtml = `<img class="item-img" src="${item.imageUrl}" alt="${item.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                 <div class="item-emoji-fallback" style="display:none">${emoji(item.name)}</div>`;
-    } else {
-      imgHtml = `<div class="item-emoji-fallback">${emoji(item.name)}</div>`;
-    }
-
+  const c = document.getElementById('customerItems');
+  if (!d.items?.length) { c.innerHTML='<div class="empty-msg">📦 આજે યાદી update નથી થઈ</div>'; return; }
+  c.innerHTML = '';
+  d.items.forEach((item, i) => {
+    const badge = item.badge==='fresh'
+      ? '<span class="badge-fresh">✨ તાજું</span>'
+      : item.badge==='limited'
+      ? '<span class="badge-limited">⚡ થોડું બાકી</span>' : '';
+    const imgHtml = item.imageUrl
+      ? `<img class="item-img" src="${item.imageUrl}" alt="" onerror="this.outerHTML='<div class=item-emoji-box>${emo(item.name)}</div>'">`
+      : `<div class="item-emoji-box">${emo(item.name)}</div>`;
     const card = document.createElement('div');
     card.className = 'item-card';
-    card.style.animationDelay = (i * 0.05) + 's';
+    card.style.animationDelay = i*0.05+'s';
     card.innerHTML = `
       <div class="item-left">
         ${imgHtml}
         <div>
           <div class="item-name">${item.name}</div>
-          <div class="item-unit">દર ${item.unit}</div>
-          ${badge}
+          <div class="item-unit">દર ${item.unit}</div>${badge}
         </div>
       </div>
       <div class="item-price">₹${item.price}</div>`;
-    container.appendChild(card);
+    c.appendChild(card);
   });
 }
 
+// ─── Navigation ───────────────────────────────────────────
 window.showAdmin = () => {
   document.getElementById('customerPage').style.display = 'none';
-  document.getElementById('adminPage').style.display = 'block';
+  document.getElementById('adminPage').style.display    = 'block';
   document.getElementById('pwdInput').value = '';
   document.getElementById('loginError').textContent = '';
 };
-
 window.goBack = () => {
-  document.getElementById('adminPage').style.display = 'none';
+  document.getElementById('adminPage').style.display    = 'none';
   document.getElementById('customerPage').style.display = 'block';
-  document.getElementById('adminPanel').style.display = 'none';
-  document.getElementById('loginWrap').style.display = 'block';
+  document.getElementById('adminPanel').style.display   = 'none';
+  document.getElementById('loginWrap').style.display    = 'block';
   renderCustomer();
 };
 
+// ─── Login ────────────────────────────────────────────────
 window.checkLogin = async () => {
-  const data = await loadData();
-  const pwd = document.getElementById('pwdInput').value;
-  if (pwd === (data.password || DEFAULT.password)) {
-    document.getElementById('loginWrap').style.display = 'none';
-    document.getElementById('adminPanel').style.display = 'block';
-    loadAdminPanel(data);
-  } else {
-    document.getElementById('loginError').textContent = '❌ Password ખોટો છે!';
-  }
+  const errEl = document.getElementById('loginError');
+  errEl.textContent = '⏳ Checking...';
+  try {
+    const d   = await loadData();
+    const pwd = document.getElementById('pwdInput').value;
+    if (pwd === (d.password || DEFAULT.password)) {
+      document.getElementById('loginWrap').style.display  = 'none';
+      document.getElementById('adminPanel').style.display = 'block';
+      loadAdminPanel(d);
+      errEl.textContent = '';
+    } else {
+      errEl.textContent = '❌ Password ખોટો! Default: admin123';
+    }
+  } catch(e) { errEl.textContent = '❌ Error: ' + e.message; }
 };
-
 window.logout = () => {
   document.getElementById('adminPanel').style.display = 'none';
-  document.getElementById('loginWrap').style.display = 'block';
+  document.getElementById('loginWrap').style.display  = 'block';
   document.getElementById('pwdInput').value = '';
 };
 
-function loadAdminPanel(data) {
-  document.getElementById('shopName').value = data.shopName || '';
-  document.getElementById('shopTagline').value = data.tagline || '';
-  document.getElementById('waNumber').value = data.waNumber || '919737668683';
-  document.getElementById('shopClosed').checked = data.shopClosed || false;
-  renderAdminItems(data.items || []);
+// ─── Admin panel ──────────────────────────────────────────
+function loadAdminPanel(d) {
+  document.getElementById('shopName').value    = d.shopName || '';
+  document.getElementById('shopTagline').value = d.tagline  || '';
+  document.getElementById('waNumber').value    = d.waNumber || '919737668683';
+  document.getElementById('shopClosed').checked = !!d.shopClosed;
+  renderAdminItems(d.items || []);
 }
 
 function renderAdminItems(items) {
@@ -347,128 +344,122 @@ function renderAdminItems(items) {
   items.forEach((item, i) => {
     const card = document.createElement('div');
     card.className = 'item-admin-card';
-    card.dataset.index = i;
-    card.dataset.imageUrl = item.imageUrl || '';
-
-    const hasImg = item.imageUrl ? true : false;
+    card.dataset.img = item.imageUrl || '';
 
     card.innerHTML = `
-      <div class="item-admin-img-row">
-        <div>
-          ${hasImg
-            ? `<img class="item-admin-preview" src="${item.imageUrl}" style="display:block" alt="img">`
-            : `<div class="item-admin-emoji-preview">${emoji(item.name)}</div>`
-          }
+      <div class="img-row">
+        <div class="img-preview-box">
+          ${item.imageUrl ? `<img src="${item.imageUrl}" alt="">` : emo(item.name)}
         </div>
-        <div class="img-upload-area">
-          <label class="img-upload-label">
-            📷 ફોટો Select કરો
-            <input type="file" class="img-upload-input item-img-file" accept="image/*" data-idx="${i}">
+        <div class="img-controls">
+          <label class="file-label">📷 ફોટો Select કરો
+            <input type="file" class="file-input" accept="image/*">
           </label>
-          <input type="text" class="img-url-input item-img-url" placeholder="અથવા Image URL paste કરો" value="${item.imageUrl || ''}">
-          <div class="upload-progress" id="prog_${i}">⏳ Upload થઈ રહ્યું છે...</div>
+          <input type="text" class="url-inp" placeholder="Image URL paste" value="${item.imageUrl||''}">
+          <div class="upload-status"></div>
         </div>
       </div>
-      <div class="item-admin-top">
-        <input type="text" value="${item.name}" placeholder="શાકભાજી નામ" class="item-name-inp">
-        <button class="del-btn" onclick="removeItem(${i})">🗑</button>
+      <div class="name-row">
+        <input type="text" class="name-inp" value="${item.name}" placeholder="શાકભાજી નામ">
+        <button class="del-btn" onclick="this.closest('.item-admin-card').remove()">🗑</button>
       </div>
-      <div class="item-admin-bottom">
-        <input type="number" value="${item.price}" placeholder="₹" class="item-price-inp">
-        <input type="text" value="${item.unit}" placeholder="unit" class="item-unit-inp" style="max-width:65px">
-        <select class="badge-select item-badge-inp">
-          <option value="" ${item.badge===''?'selected':''}>—</option>
-          <option value="fresh" ${item.badge==='fresh'?'selected':''}>✨ તાજું</option>
+      <div class="detail-row">
+        <input type="number" class="price-inp" value="${item.price}" placeholder="₹">
+        <input type="text"   class="unit-inp"  value="${item.unit}"  placeholder="unit">
+        <select class="badge-inp">
+          <option value=""       ${item.badge===''?'selected':''}>—</option>
+          <option value="fresh"   ${item.badge==='fresh'?'selected':''}>✨ તાજું</option>
           <option value="limited" ${item.badge==='limited'?'selected':''}>⚡ થોડું</option>
         </select>
       </div>`;
+
     c.appendChild(card);
 
-    // File upload handler
-    const fileInput = card.querySelector('.item-img-file');
-    fileInput.addEventListener('change', async (e) => {
-      const file = e.target.files[0];
-      if (!file) return;
-      const prog = document.getElementById(`prog_${i}`);
-      prog.style.display = 'block';
+    const fileIn   = card.querySelector('.file-input');
+    const urlIn    = card.querySelector('.url-inp');
+    const statusEl = card.querySelector('.upload-status');
+    const previewEl = card.querySelector('.img-preview-box');
+
+    function setPreview(url) {
+      card.dataset.img = url;
+      previewEl.innerHTML = url ? `<img src="${url}" alt="">` : emo(card.querySelector('.name-inp').value);
+    }
+
+    fileIn.addEventListener('change', async e => {
+      const file = e.target.files[0]; if (!file) return;
+      statusEl.style.display = 'block';
+      statusEl.textContent = '⏳ Upload...';
       try {
-        const url = await uploadImage(file, i);
-        card.dataset.imageUrl = url;
-        card.querySelector('.item-img-url').value = url;
-        // Show preview
-        const previewArea = card.querySelector('.item-admin-img-row > div');
-        previewArea.innerHTML = `<img class="item-admin-preview" src="${url}" style="display:block" alt="img">`;
-        prog.textContent = '✅ Upload Done!';
-        setTimeout(() => { prog.style.display = 'none'; prog.textContent = '⏳ Upload થઈ રહ્યું છે...'; }, 2000);
-      } catch (err) {
-        prog.textContent = '❌ Upload failed! Firebase Storage check करा.';
-        console.error(err);
+        const url = await uploadImg(file, 'item'+i+'_'+Date.now());
+        urlIn.value = url;
+        setPreview(url);
+        statusEl.textContent = '✅ Done!';
+        setTimeout(()=>statusEl.style.display='none', 2000);
+      } catch(err) {
+        statusEl.textContent = '❌ ' + err.message;
       }
     });
 
-    // URL input handler - show preview
-    const urlInput = card.querySelector('.item-img-url');
-    urlInput.addEventListener('input', (e) => {
-      const url = e.target.value.trim();
-      card.dataset.imageUrl = url;
-      if (url) {
-        const previewArea = card.querySelector('.item-admin-img-row > div');
-        previewArea.innerHTML = `<img class="item-admin-preview" src="${url}" style="display:block" onerror="this.style.display='none'" alt="img">`;
-      }
-    });
+    urlIn.addEventListener('input', () => setPreview(urlIn.value.trim()));
   });
 }
 
 function collectItems() {
-  return [...document.querySelectorAll('.item-admin-card')].map(card => ({
-    name: card.querySelector('.item-name-inp').value.trim(),
-    price: card.querySelector('.item-price-inp').value.trim(),
-    unit: card.querySelector('.item-unit-inp').value.trim() || 'kg',
-    badge: card.querySelector('.item-badge-inp').value,
-    imageUrl: card.querySelector('.item-img-url').value.trim() || card.dataset.imageUrl || ''
+  return [...document.querySelectorAll('.item-admin-card')].map(c => ({
+    name:     c.querySelector('.name-inp').value.trim(),
+    price:    c.querySelector('.price-inp').value.trim(),
+    unit:     c.querySelector('.unit-inp').value.trim() || 'kg',
+    badge:    c.querySelector('.badge-inp').value,
+    imageUrl: c.querySelector('.url-inp').value.trim() || c.dataset.img || ''
   })).filter(i => i.name && i.price);
 }
 
 window.addItem = () => {
   const items = collectItems();
-  items.push({ name: '', price: '', unit: 'kg', badge: '', imageUrl: '' });
+  items.push({ name:'', price:'', unit:'kg', badge:'', imageUrl:'' });
   renderAdminItems(items);
-  document.getElementById('adminItems').lastElementChild?.scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('adminItems').lastElementChild?.scrollIntoView({behavior:'smooth'});
 };
 
-window.removeItem = (i) => {
-  const items = collectItems();
-  items.splice(i, 1);
-  renderAdminItems(items);
-};
-
+// ─── Save ─────────────────────────────────────────────────
 window.saveAll = async () => {
-  const data = await loadData();
-  data.shopName = document.getElementById('shopName').value.trim() || DEFAULT.shopName;
-  data.tagline = document.getElementById('shopTagline').value.trim() || DEFAULT.tagline;
-  data.waNumber = document.getElementById('waNumber').value.trim() || '919737668683';
-  data.shopClosed = document.getElementById('shopClosed').checked;
-  data.items = collectItems();
-
-  const newPwd = document.getElementById('newPwd').value;
-  const confirmPwd = document.getElementById('confirmPwd').value;
-  if (newPwd) {
-    if (newPwd !== confirmPwd) { alert('❌ Password match नाही!'); return; }
-    data.password = newPwd;
-    document.getElementById('newPwd').value = '';
-    document.getElementById('confirmPwd').value = '';
-  }
-
-  const now = new Date();
-  data.lastUpdated = now.toLocaleDateString('gu-IN', { day: 'numeric', month: 'short' }) + ', ' + now.toLocaleTimeString('gu-IN', { hour: '2-digit', minute: '2-digit' });
+  const btn  = document.getElementById('saveBtn');
+  const okEl = document.getElementById('msgSuccess');
+  const errEl= document.getElementById('msgError');
+  okEl.style.display = errEl.style.display = 'none';
+  btn.disabled = true; btn.textContent = '⏳ Save होत आहे...';
 
   try {
-    await saveData(data);
-    const s = document.getElementById('saveSuccess');
-    s.style.display = 'block';
-    setTimeout(() => s.style.display = 'none', 2500);
-  } catch {
-    alert('❌ Save नाही झाला! Internet check करा.');
+    const d = await loadData();
+    d.shopName   = document.getElementById('shopName').value.trim()    || DEFAULT.shopName;
+    d.tagline    = document.getElementById('shopTagline').value.trim() || DEFAULT.tagline;
+    d.waNumber   = document.getElementById('waNumber').value.trim()    || '919737668683';
+    d.shopClosed = document.getElementById('shopClosed').checked;
+    d.items      = collectItems();
+
+    const np = document.getElementById('newPwd').value;
+    const cp = document.getElementById('confirmPwd').value;
+    if (np) {
+      if (np !== cp) { alert('❌ Password match नाही!'); return; }
+      d.password = np;
+      document.getElementById('newPwd').value = document.getElementById('confirmPwd').value = '';
+    }
+
+    const now = new Date();
+    d.lastUpdated = now.toLocaleDateString('gu-IN',{day:'numeric',month:'short'})
+      + ', ' + now.toLocaleTimeString('gu-IN',{hour:'2-digit',minute:'2-digit'});
+
+    await saveData(d);
+
+    okEl.textContent   = '✅ Save થઈ ગયું! ' + d.items.length + ' items Firebase મા.';
+    okEl.style.display = 'block';
+    setTimeout(()=> okEl.style.display='none', 3000);
+  } catch(e) {
+    errEl.textContent   = '❌ Save failed!\n\nError: ' + e.message
+      + '\n\nFix: Firebase Console → Realtime Database → Rules → paste:\n{"rules":{".read":true,".write":true}}';
+    errEl.style.display = 'block';
+  } finally {
+    btn.disabled = false; btn.textContent = '💾 Save करो';
   }
 };
 
